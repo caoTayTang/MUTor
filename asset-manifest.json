@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/MuTor/static/css/main.a72de384.css",
-    "main.js": "/MuTor/static/js/main.965e334b.js",
+    "main.js": "/MuTor/static/js/main.cb852d3c.js",
     "static/js/453.8701dc61.chunk.js": "/MuTor/static/js/453.8701dc61.chunk.js",
     "static/media/slbk.jpg": "/MuTor/static/media/slbk.0a4e1a3d925ef1fb45c0.jpg",
     "index.html": "/MuTor/index.html",
     "main.a72de384.css.map": "/MuTor/static/css/main.a72de384.css.map",
-    "main.965e334b.js.map": "/MuTor/static/js/main.965e334b.js.map",
+    "main.cb852d3c.js.map": "/MuTor/static/js/main.cb852d3c.js.map",
     "453.8701dc61.chunk.js.map": "/MuTor/static/js/453.8701dc61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a72de384.css",
-    "static/js/main.965e334b.js"
+    "static/js/main.cb852d3c.js"
   ]
 }
