@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { AuthProvider, useAuth } from "./views/contexts/AuthContext";
+import { AuthProvider } from "./views/contexts/AuthContext";
 import { ProtectedRoute } from "./views/components/ProtectedRoute";
 import DashboardLayout from "./views/components/DashboardLayout";
 
@@ -9,7 +9,6 @@ import HomePage from "./views/pages/HomePage";
 import TutorCourseDashboard from "./views/pages/tutor/TutorCourseDashboard";
 import TuteeCourseEnrollment from "./views/pages/tutee/TuteeCourseEnrollment";
 import FeedbackPage from "./views/pages/shared/FeedbackPage";
-import CreateMeetingPage from "./views/pages/shared/CreateMeetingPage";
 import TrackingPage from "./views/pages/shared/TrackingPage";
 import ReportPage from "./views/pages/shared/ReportPage";
 import LibraryPage from "./views/pages/shared/LibraryPage";
@@ -17,7 +16,6 @@ import LibraryPage from "./views/pages/shared/LibraryPage";
 import AdminDashboard from "./views/pages/admin/AdminDashboard"
 import AdminEvaluations from "./views/pages/admin/AdminEvaluations"
 import AdminFeedbacks from "./views/pages/admin/AdminFeedbacks"
-import AdminMeetings from "./views/pages/admin/AdminMeetings"
 import AdminReports from "./views/pages/admin/AdminReports"
 import AdminTracking from "./views/pages/admin/AdminTracking"
 
@@ -36,7 +34,6 @@ function App() {
               <Route path="/tutor/courses" element={<TutorCourseDashboard />} />
               <Route path="/tutor/tracking" element={<TrackingPage />} />
               <Route path="/tutor/reports" element={<ReportPage />} />
-              <Route path="/tutor/meeting/create" element={<CreateMeetingPage />} />
             </Route>
           </Route>
 
@@ -53,7 +50,6 @@ function App() {
         <Route element={<ProtectedRoute allowedRoles={["admin"]} />}>
           <Route element={<DashboardLayout />}>
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
-            <Route path="/admin/meetings" element={<AdminMeetings />} />
             <Route path="/admin/feedbacks" element={<AdminFeedbacks />} />
             <Route path="/admin/reports" element={<AdminReports />} />
             <Route path="/admin/evaluations" element={<AdminEvaluations />} />
